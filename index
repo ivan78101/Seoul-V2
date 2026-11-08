@@ -5,234 +5,1227 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#233b58">
 <title>首爾七天六夜｜2026.11.28—12.04</title>
+
 <style>
 :root{
-  --ink:#263445;--muted:#667487;--paper:#f6f7f8;--card:#fff;--line:#e4e8ed;
-  --blue:#e7f2fc;--blue-line:#a9c9e7;--green:#eaf5e9;--green-line:#b8d8b4;
-  --navy:#233b58;--gold:#c59b57;--shadow:0 8px 24px rgba(32,48,66,.07);
+  --ink:#263445;
+  --muted:#667487;
+  --paper:#f6f7f8;
+  --card:#fff;
+  --line:#e4e8ed;
+  --blue:#e7f2fc;
+  --blue-line:#a9c9e7;
+  --green:#eaf5e9;
+  --green-line:#b8d8b4;
+  --navy:#233b58;
+  --gold:#c59b57;
+  --shadow:0 8px 24px rgba(32,48,66,.07);
 }
+
 *{box-sizing:border-box}
+
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.75}
-a{color:inherit}
-.hero{background:linear-gradient(135deg,#1e344d,#456782 65%,#b6c6cf);color:white;padding:54px 22px 42px}
-.hero-inner{max-width:1000px;margin:auto}
-.kicker{letter-spacing:.18em;font-size:.78rem;opacity:.85}
-h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.18;margin:12px 0}
-.hero p{max-width:650px;margin:12px 0 0;color:#edf3f7}
-.meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
-.pill{border:1px solid #ffffff55;background:#ffffff18;border-radius:99px;padding:5px 12px;font-size:.85rem}
-nav{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);overflow-x:auto}
-.navinner{max-width:1000px;margin:auto;display:flex;gap:6px;padding:9px 14px;white-space:nowrap}
-nav a{text-decoration:none;font-size:.85rem;color:#506174;padding:7px 10px;border-radius:8px}
-nav a:hover{background:#edf2f6}
-main{max-width:1000px;margin:28px auto;padding:0 16px 70px}
-.intro{background:white;border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:var(--shadow);margin-bottom:24px}
-.intro h2{margin:0 0 8px;font-size:1.18rem}
-.intro p{margin:0;color:var(--muted)}
-.day{margin:30px 0 42px;scroll-margin-top:75px}
-.dayhead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:2px solid var(--navy);padding-bottom:12px;margin-bottom:17px}
-.dayhead h2{margin:0;font-size:1.55rem}
-.dayhead small{color:var(--muted);font-weight:600}
-.tag{font-size:.78rem;background:#eaf0f5;color:#3e5872;padding:4px 10px;border-radius:99px;white-space:nowrap}
-.timeline{display:grid;grid-template-columns:100px 1fr;gap:0 14px}
-.time{font-size:.88rem;font-weight:700;color:#60758a;padding:13px 0;border-bottom:1px solid var(--line)}
-.event{padding:12px 0;border-bottom:1px solid var(--line)}
-.event strong{display:block}
-.event span{color:var(--muted);font-size:.92rem}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
-.route{border-radius:15px;padding:16px;border:1px solid}
-.route.user{background:var(--blue);border-color:var(--blue-line)}
-.route.friend{background:var(--green);border-color:var(--green-line)}
-.route h3{margin:0 0 8px;font-size:1rem}
-.route p{margin:5px 0;font-size:.92rem}
-.route ul{margin:6px 0 0;padding-left:20px;font-size:.92rem}
-.place-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:15px}
-.place{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:16px 17px;box-shadow:0 3px 12px rgba(32,48,66,.035)}
-.place h3{font-size:1.05rem;margin:0 0 7px}
-.place p{margin:7px 0;font-size:.92rem}
-.place .facts{color:var(--muted)}
-.place b{color:#344e68}
-.place details{margin-top:9px;border-top:1px solid var(--line);padding-top:8px}
-.place summary{cursor:pointer;color:#365a7d;font-weight:650;font-size:.9rem}
-.place details p{color:#526274}
-.section-label{font-size:.8rem;letter-spacing:.08em;color:#738295;font-weight:750;margin:22px 0 8px}
-.note{font-size:.86rem;color:var(--muted);background:#f0f3f6;border-radius:12px;padding:12px 14px;margin-top:15px}
-.footer{border-top:1px solid var(--line);padding:25px 5px;color:var(--muted);font-size:.85rem}
-@media(max-width:650px){
- .hero{padding:38px 19px 32px}
- main{padding:0 13px 50px;margin-top:18px}
- .dayhead{align-items:flex-start;flex-direction:column}
- .timeline{grid-template-columns:75px 1fr;gap:0 9px}
- .split,.place-grid{grid-template-columns:1fr}
- .place{padding:14px}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;
+  line-height:1.75;
 }
+
+a{color:inherit}
+
+.hero{
+  background:linear-gradient(135deg,#1e344d,#456782 65%,#b6c6cf);
+  color:white;
+  padding:54px 22px 42px;
+}
+
+.hero-inner{
+  max-width:1000px;
+  margin:auto;
+}
+
+.kicker{
+  letter-spacing:.18em;
+  font-size:.78rem;
+  opacity:.85;
+}
+
+h1{
+  font-size:clamp(2rem,6vw,3.6rem);
+  line-height:1.18;
+  margin:12px 0;
+}
+
+.hero p{
+  max-width:650px;
+  margin:12px 0 0;
+  color:#edf3f7;
+}
+
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:22px;
+}
+
+.pill{
+  border:1px solid #ffffff55;
+  background:#ffffff18;
+  border-radius:99px;
+  padding:5px 12px;
+  font-size:.85rem;
+}
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:5;
+  background:#ffffffed;
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  overflow-x:auto;
+}
+
+.navinner{
+  max-width:1000px;
+  margin:auto;
+  display:flex;
+  gap:6px;
+  padding:9px 14px;
+  white-space:nowrap;
+}
+
+nav a{
+  text-decoration:none;
+  font-size:.85rem;
+  color:#506174;
+  padding:7px 10px;
+  border-radius:8px;
+}
+
+nav a:hover{background:#edf2f6}
+
+main{
+  max-width:1000px;
+  margin:28px auto;
+  padding:0 16px 70px;
+}
+
+.intro{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px 22px;
+  box-shadow:var(--shadow);
+  margin-bottom:24px;
+}
+
+.intro h2{
+  margin:0 0 8px;
+  font-size:1.18rem;
+}
+
+.intro p{
+  margin:0;
+  color:var(--muted);
+}
+
+.day{
+  margin:30px 0 42px;
+  scroll-margin-top:75px;
+}
+
+.dayhead{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  border-bottom:2px solid var(--navy);
+  padding-bottom:12px;
+  margin-bottom:17px;
+}
+
+.dayhead h2{
+  margin:0;
+  font-size:1.55rem;
+}
+
+.dayhead small{
+  color:var(--muted);
+  font-weight:600;
+}
+
+.tag{
+  font-size:.78rem;
+  background:#eaf0f5;
+  color:#3e5872;
+  padding:4px 10px;
+  border-radius:99px;
+  white-space:nowrap;
+}
+
+.timeline{
+  display:grid;
+  grid-template-columns:100px 1fr;
+  gap:0 14px;
+}
+
+.time{
+  font-size:.88rem;
+  font-weight:700;
+  color:#60758a;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.event{
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.event strong{display:block}
+
+.event span{
+  color:var(--muted);
+  font-size:.92rem;
+}
+
+.split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin:16px 0;
+}
+
+.route{
+  border-radius:15px;
+  padding:16px;
+  border:1px solid;
+}
+
+.route.user{
+  background:var(--blue);
+  border-color:var(--blue-line);
+}
+
+.route.friend{
+  background:var(--green);
+  border-color:var(--green-line);
+}
+
+.route h3{
+  margin:0 0 8px;
+  font-size:1rem;
+}
+
+.route p{
+  margin:5px 0;
+  font-size:.92rem;
+}
+
+.route ul{
+  margin:6px 0 0;
+  padding-left:20px;
+  font-size:.92rem;
+}
+
+.route .time{
+  border:0;
+  padding:5px 0 0;
+  color:#526f8c;
+}
+
+.route .event{
+  border-bottom:1px solid #ffffff99;
+}
+
+.place-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+  margin-top:15px;
+}
+
+.place{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:16px 17px;
+  box-shadow:0 3px 12px rgba(32,48,66,.035);
+}
+
+.place h3{
+  font-size:1.05rem;
+  margin:0 0 7px;
+}
+
+.place p{
+  margin:7px 0;
+  font-size:.92rem;
+}
+
+.place .facts{color:var(--muted)}
+
+.place b{color:#344e68}
+
+.place details{
+  margin-top:9px;
+  border-top:1px solid var(--line);
+  padding-top:8px;
+}
+
+.place summary{
+  cursor:pointer;
+  color:#365a7d;
+  font-weight:650;
+  font-size:.9rem;
+}
+
+.place details p{color:#526274}
+
+.section-label{
+  font-size:.8rem;
+  letter-spacing:.08em;
+  color:#738295;
+  font-weight:750;
+  margin:22px 0 8px;
+}
+
+.note{
+  font-size:.86rem;
+  color:var(--muted);
+  background:#f0f3f6;
+  border-radius:12px;
+  padding:12px 14px;
+  margin-top:15px;
+}
+
+.footer{
+  border-top:1px solid var(--line);
+  padding:25px 5px;
+  color:var(--muted);
+  font-size:.85rem;
+}
+
+@media(max-width:650px){
+  .hero{padding:38px 19px 32px}
+
+  main{
+    padding:0 13px 50px;
+    margin-top:18px;
+  }
+
+  .dayhead{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .timeline{
+    grid-template-columns:75px 1fr;
+    gap:0 9px;
+  }
+
+  .split,.place-grid{
+    grid-template-columns:1fr;
+  }
+
+  .place{padding:14px}
+}
+
 @media print{
- nav{display:none}.hero{background:#233b58!important;print-color-adjust:exact}
- body{background:white}.place,.intro{box-shadow:none;break-inside:avoid}
- details{display:block}details>summary{display:none}
+  nav{display:none}
+
+  .hero{
+    background:#233b58!important;
+    print-color-adjust:exact;
+  }
+
+  body{background:white}
+
+  .place,.intro{
+    box-shadow:none;
+    break-inside:avoid;
+  }
+
+  details{display:block}
+
+  details>summary{display:none}
 }
 </style>
 </head>
+
 <body>
+
 <header class="hero">
  <div class="hero-inner">
   <div class="kicker">SEOUL · KOREA · WINTER TRIP</div>
   <h1>首爾七天六夜</h1>
   <p>從朝鮮王朝宮殿、韓國近代歷史，到傳統市場、韓流文化與首爾夜景。三人同行的冬季首爾旅行紀錄。</p>
-  <div class="meta"><span class="pill">2026.11.28（六）—12.04（五）</span><span class="pill">7 天 6 夜</span><span class="pill">3 位旅客</span><span class="pill">住宿：新村站附近</span></div>
+
+  <div class="meta">
+   <span class="pill">2026.11.28（六）—12.04（五）</span>
+   <span class="pill">7 天 6 夜</span>
+   <span class="pill">3 位旅客</span>
+   <span class="pill">住宿：新村站附近</span>
+  </div>
  </div>
 </header>
-<nav><div class="navinner">
-<a href="#d1">11/28 抵達</a><a href="#d2">11/29 演唱會</a><a href="#d3">11/30 蠶室</a><a href="#d4">12/01 DMZ</a><a href="#d5">12/02 宮殿</a><a href="#d6">12/03 韓屋歷史</a><a href="#d7">12/04 返台</a>
-</div></nav>
+
+<nav>
+ <div class="navinner">
+  <a href="#d1">11/28 抵達</a>
+  <a href="#d2">11/29 演唱會</a>
+  <a href="#d3">11/30 蠶室</a>
+  <a href="#d4">12/01 DMZ</a>
+  <a href="#d5">12/02 宮殿</a>
+  <a href="#d6">12/03 韓屋歷史</a>
+  <a href="#d7">12/04 返台</a>
+ </div>
+</nav>
+
 <main>
+
 <section class="intro">
  <h2>旅程概覽</h2>
  <p>去程：華航 CI162，11/28 抵達仁川預定 19:15。回程：華航 CI161，12/04 12:30 起飛，預計 09:30 抵達仁川機場。每日時間為行程規劃參考，實際交通、店家營業與景點開放情況以當日公告為準。</p>
 </section>
 
+<!-- DAY 1 -->
+
 <section class="day" id="d1">
- <div class="dayhead"><div><small>DAY 01 · SATURDAY</small><h2>11/28（六）抵達首爾・弘大・新村</h2></div><span class="tag">抵達日</span></div>
- <div class="timeline">
-  <div class="time">19:15</div><div class="event"><strong>抵達仁川國際機場</strong><span>入境、領取行李。</span></div>
-  <div class="time">晚間</div><div class="event"><strong>搭乘 AREX 前往弘大入口站</strong><span>從機場搭乘機場鐵路前往弘大。</span></div>
-  <div class="time">晚餐</div><div class="event"><strong>弘大豚壽百湯飯</strong><span>先在弘大用餐，再前往新村民宿。</span></div>
-  <div class="time">晚餐後</div><div class="event"><strong>前往新村民宿入住</strong><span>入住後視體力到附近 CU 便利商店採買。</span></div>
+ <div class="dayhead">
+  <div>
+   <small>DAY 01 · SATURDAY</small>
+   <h2>11/28（六）抵達首爾・弘大・新村</h2>
+  </div>
+  <span class="tag">抵達日</span>
  </div>
+
+ <div class="timeline">
+  <div class="time">19:15</div>
+  <div class="event">
+   <strong>抵達仁川國際機場</strong>
+   <span>搭乘華航 CI162 抵達仁川，辦理入境及領取行李。</span>
+  </div>
+
+  <div class="time">晚間</div>
+  <div class="event">
+   <strong>搭乘 AREX 前往弘大入口站</strong>
+   <span>從機場搭乘機場鐵路前往弘大，再前往晚餐地點。</span>
+  </div>
+
+  <div class="time">晚餐</div>
+  <div class="event">
+   <strong>弘大豚壽百湯飯</strong>
+   <span>先在弘大用餐，吃完再前往新村民宿。</span>
+  </div>
+
+  <div class="time">晚餐後</div>
+  <div class="event">
+   <strong>前往新村民宿入住</strong>
+   <span>入住後視體力到附近 CU 便利商店採買。</span>
+  </div>
+ </div>
+
  <div class="place-grid">
-  <article class="place"><h3>弘大商圈（홍대）</h3><p class="facts">因鄰近弘益大學而得名，是首爾年輕文化、街頭表演與流行藝術的聚集地。</p><p><b>必逛：</b>弘大步行街、服飾店、韓流周邊店、特色小店。</p><p><b>必看：</b>街頭表演與夜間商圈氣氛。</p><details><summary>更多介紹</summary><p>弘大從大學周邊逐漸發展成音樂、藝術、時尚與夜生活區域，適合感受首爾年輕人的生活節奏。</p></details></article>
-  <article class="place"><h3>新村站周邊（신촌）</h3><p class="facts">鄰近延世大學、梨花女子大學等校園，是首爾知名的大學商圈。</p><p><b>必逛：</b>延世路、地下街、周邊餐廳與咖啡廳。</p><p><b>特色：</b>比起觀光區，更能感受學生與居民的日常生活。</p></article>
+
+  <article class="place">
+   <h3>弘大商圈（홍대）</h3>
+   <p class="facts">因鄰近弘益大學而得名，是首爾年輕文化、街頭表演與流行藝術的聚集地。</p>
+   <p><b>必逛：</b>弘大步行街、服飾店、韓流周邊店、特色小店。</p>
+   <p><b>必看：</b>街頭表演與夜間商圈氣氛。</p>
+   <details>
+    <summary>更多介紹</summary>
+    <p>弘大從大學周邊逐漸發展成音樂、藝術、時尚與夜生活區域，適合感受首爾年輕人的生活節奏。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>新村站周邊（신촌）</h3>
+   <p class="facts">鄰近延世大學、梨花女子大學等校園，是首爾知名的大學商圈。</p>
+   <p><b>必逛：</b>延世路、地下街、周邊餐廳與咖啡廳。</p>
+   <p><b>特色：</b>比起觀光區，更能感受學生與居民的日常生活。</p>
+  </article>
+
  </div>
 </section>
+
+<!-- DAY 2 -->
 
 <section class="day" id="d2">
- <div class="dayhead"><div><small>DAY 02 · SUNDAY</small><h2>11/29（日）安國・北村・NMIXX 演唱會</h2></div><span class="tag">上午共同・之後分流</span></div>
+ <div class="dayhead">
+  <div>
+   <small>DAY 02 · SUNDAY</small>
+   <h2>11/29（日）安國・北村・NMIXX 演唱會</h2>
+  </div>
+  <span class="tag">上午共同・下午分流</span>
+ </div>
+
  <div class="timeline">
-  <div class="time">早上</div><div class="event"><strong>新村出發，前往安國一帶</strong></div>
-  <div class="time">上午</div><div class="event"><strong>雲峴宮、中央高中、北村韓屋村</strong><span>北村依當天時間安排。</span></div>
-  <div class="time">11:00</div><div class="event"><strong>黃生家刀切麵（황생가칼국수）午餐</strong></div>
-  <div class="time">約 12:00</div><div class="event"><strong>使用者出發前往 INSPIRE Arena</strong></div>
-  <div class="time">15:00</div><div class="event"><strong>NMIXX 演唱會入場</strong></div>
-  <div class="time">16:00</div><div class="event"><strong>NMIXX 演唱會開始</strong></div>
-  <div class="time">約 19:30</div><div class="event"><strong>演唱會結束，返回首爾</strong></div>
+
+  <div class="time">早上</div>
+  <div class="event">
+   <strong>新村出發，前往安國一帶</strong>
+   <span>搭乘大眾交通工具前往雲峴宮周邊。</span>
+  </div>
+
+  <div class="time">上午</div>
+  <div class="event">
+   <strong>雲峴宮、中央高中、北村韓屋村</strong>
+   <span>三人共同參觀，北村依當天時間及參觀狀況安排。</span>
+  </div>
+
+  <div class="time">11:00</div>
+  <div class="event">
+   <strong>黃生家刀切麵（황생가칼국수）午餐</strong>
+   <span>品嚐韓式刀切麵及餃子。</span>
+  </div>
+
  </div>
- <div class="place-grid">
-  <article class="place"><h3>雲峴宮（운현궁）</h3><p class="facts">朝鮮王朝末期興宣大院君的宅邸，與高宗即位及王朝末期政治密切相關。</p><p><b>必看：</b>老樂堂、二老堂、迎賓館與傳統庭院。</p><details><summary>歷史故事</summary><p>高宗即位前曾居住於此。高宗之父興宣大院君在高宗即位前後掌握重要政治權力，雲峴宮因此成為理解朝鮮末期歷史的重要地點。</p></details></article>
-  <article class="place"><h3>中央高中（중앙고등학교）</h3><p class="facts">創立於 1908 年，是韓國近代教育史上具有代表性的學校。</p><p><b>必看：</b>紅磚建築、校門與具有歷史感的校舍。</p><details><summary>參觀特色</summary><p>校園也因韓劇《冬季戀歌》等作品受到注意。這是實際運作中的學校，能否進入校園依校方規定；若不開放，以校外參觀為主。</p></details></article>
-  <article class="place"><h3>北村韓屋村（북촌한옥마을）</h3><p class="facts">位於景福宮與昌德宮之間，過去是王室親族及官員居住的區域。</p><p><b>必看：</b>韓屋巷弄、傳統屋瓦與遠眺首爾市區的景色。</p><p><b>必拍：</b>韓屋屋頂與現代高樓交錯的街景。</p><details><summary>參觀特色</summary><p>這裡仍是居民住宅區，參觀時請保持安靜並遵守當地開放時段及現場規定。</p></details></article>
-  <article class="place"><h3>黃生家刀切麵（황생가칼국수）</h3><p class="facts">安國一帶知名的韓式刀切麵餐廳。</p><p><b>可以吃：</b>刀切麵、餃子等韓式麵食。</p></article>
+
+ <div class="section-label">下午分流行程｜左右兩條路線</div>
+
+ <div class="split">
+
+  <article class="route user">
+   <h3>我的路線｜淡藍色</h3>
+
+   <div class="event">
+    <div class="time">約 12:00</div>
+    <strong>從安國一帶出發</strong>
+    <p>搭乘大眾交通工具前往仁川 INSPIRE Arena，預留交通與轉乘時間。</p>
+   </div>
+
+   <div class="event">
+    <div class="time">下午</div>
+    <strong>抵達 INSPIRE Arena</strong>
+    <p>確認入場資訊、票券及現場活動，準備排隊入場。</p>
+   </div>
+
+   <div class="event">
+    <div class="time">15:00</div>
+    <strong>NMIXX 演唱會入場</strong>
+    <p>確認票券、座位及場館入場規定。</p>
+   </div>
+
+   <div class="event">
+    <div class="time">16:00</div>
+    <strong>NMIXX 2026 仁川安可演唱會</strong>
+    <p>INSPIRE Arena｜NSWER 演唱會日！</p>
+   </div>
+
+   <div class="event">
+    <div class="time">約 19:30</div>
+    <strong>演唱會結束</strong>
+    <p>依現場散場狀況搭乘交通工具返回首爾。</p>
+   </div>
+  </article>
+
+  <article class="route friend">
+   <h3>小萊姆與介佑的路線｜淡綠色</h3>
+   <p>上午共同參觀結束後，自行選擇想去的景點，不設定固定時間，也不限定順序。</p>
+
+   <p><b>昌德宮（창덕궁）</b></p>
+   <p>朝鮮王朝五大宮殿之一，以順應自然地形的宮殿配置與後苑聞名。</p>
+
+   <p><b>昌慶宮（창경궁）</b></p>
+   <p>與昌德宮相鄰，保留朝鮮王朝宮殿建築及庭園。</p>
+
+   <p><b>宗廟（종묘）</b></p>
+   <p>祭祀朝鮮王朝歷代國王與王后的皇家祠廟，列入 UNESCO 世界文化遺產。</p>
+
+   <p><b>安國站周邊</b></p>
+   <p>韓屋、咖啡廳、文創商店與特色小店聚集的區域。</p>
+
+   <p><b>北村韓屋村</b></p>
+   <p>若上午停留時間較短，可以繼續在北村周邊散步與拍照。</p>
+
+   <p><b>東廟跳蚤市場（동묘벼룩시장）</b></p>
+   <p>尋找二手衣物、古物、老物件與特色商品，適合喜歡挖寶的人。</p>
+  </article>
+
  </div>
- <div class="section-label">朋友自由選擇景點｜不設定時間、不限定順序</div>
+
  <div class="place-grid">
-  <article class="place"><h3>昌德宮（창덕궁）</h3><p class="facts">建於 1405 年，曾長期作為朝鮮王室主要居住與辦公的宮殿。</p><p><b>必看：</b>仁政殿、宣政殿、大造殿。</p><p><b>必逛：</b>後苑（秘苑），以池塘、亭閣與自然地形融合的庭園聞名。</p><details><summary>歷史故事</summary><p>昌德宮是 UNESCO 世界文化遺產。相較於完全對稱的宮殿配置，它順應地形建造，呈現建築與自然環境相融的特色。</p></details></article>
-  <article class="place"><h3>昌慶宮（창경궁）</h3><p class="facts">建於 1483 年，最初是成宗為安置王室長輩而擴建的宮殿。</p><p><b>必看：</b>明政殿、弘化門、通明殿。</p><details><summary>歷史故事</summary><p>日本殖民統治時期曾被改建為動物園與植物園，後來逐步恢復宮殿原貌。</p></details></article>
-  <article class="place"><h3>宗廟（종묘）</h3><p class="facts">朝鮮王朝祭祀歷代國王與王后的皇家祠廟，始建於 14 世紀末。</p><p><b>必看：</b>正殿、永寧殿。</p><details><summary>歷史故事</summary><p>宗廟祭禮及祭禮樂被列入 UNESCO 人類非物質文化遺產，建築風格莊嚴簡潔。</p></details></article>
-  <article class="place"><h3>東廟跳蚤市場（동묘벼룩시장）</h3><p class="facts">以二手衣物、古董、老物件及跳蚤市場攤販聞名。</p><p><b>必逛：</b>古著、老相機、唱片、生活雜貨。</p><p><b>特色：</b>適合慢慢挖寶、尋找復古商品。</p></article>
+
+  <article class="place">
+   <h3>雲峴宮（운현궁）</h3>
+   <p class="facts">朝鮮王朝末期興宣大院君的宅邸，與高宗即位及王朝末期政治密切相關。</p>
+   <p><b>必看：</b>老樂堂、二老堂、迎賓館與傳統庭院。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>高宗即位前曾居住於此。高宗之父興宣大院君在高宗即位前後掌握重要政治權力，雲峴宮因此成為理解朝鮮末期歷史的重要地點。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>中央高中（중앙고등학교）</h3>
+   <p class="facts">創立於 1908 年，是韓國近代教育史上具有代表性的學校。</p>
+   <p><b>必看：</b>紅磚建築、校門與具有歷史感的校舍。</p>
+   <details>
+    <summary>參觀特色</summary>
+    <p>校園也因韓劇《冬季戀歌》等作品受到注意。這是實際運作中的學校，能否進入校園依校方規定；若不開放，以校外參觀為主。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>北村韓屋村（북촌한옥마을）</h3>
+   <p class="facts">位於景福宮與昌德宮之間，過去是王室親族及官員居住的區域。</p>
+   <p><b>必看：</b>韓屋巷弄、傳統屋瓦與遠眺首爾市區的景色。</p>
+   <p><b>必拍：</b>韓屋屋頂與現代高樓交錯的街景。</p>
+   <details>
+    <summary>參觀特色</summary>
+    <p>這裡仍是居民住宅區，參觀時請保持安靜並遵守當地開放時段及現場規定。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>黃生家刀切麵（황생가칼국수）</h3>
+   <p class="facts">安國一帶知名的韓式刀切麵餐廳。</p>
+   <p><b>可以吃：</b>刀切麵、餃子等韓式麵食。</p>
+  </article>
+
+  <article class="place">
+   <h3>昌德宮（창덕궁）</h3>
+   <p class="facts">建於 1405 年，曾長期作為朝鮮王室主要居住與辦公的宮殿。</p>
+   <p><b>必看：</b>仁政殿、宣政殿、大造殿。</p>
+   <p><b>必逛：</b>後苑（秘苑），以池塘、亭閣與自然地形融合的庭園聞名。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>昌德宮是 UNESCO 世界文化遺產。相較於完全對稱的宮殿配置，它順應地形建造，呈現建築與自然環境相融的特色。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>昌慶宮（창경궁）</h3>
+   <p class="facts">建於 1483 年，最初是成宗為安置王室長輩而擴建的宮殿。</p>
+   <p><b>必看：</b>明政殿、弘化門、通明殿。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>日本殖民統治時期曾被改建為動物園與植物園，後來逐步恢復宮殿原貌。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>宗廟（종묘）</h3>
+   <p class="facts">朝鮮王朝祭祀歷代國王與王后的皇家祠廟，始建於 14 世紀末。</p>
+   <p><b>必看：</b>正殿、永寧殿。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>宗廟祭禮及祭禮樂被列入 UNESCO 人類非物質文化遺產，建築風格莊嚴簡潔。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>東廟跳蚤市場（동묘벼룩시장）</h3>
+   <p class="facts">以二手衣物、古董、老物件及跳蚤市場攤販聞名。</p>
+   <p><b>必逛：</b>古著、老相機、唱片、生活雜貨。</p>
+   <p><b>特色：</b>適合慢慢挖寶、尋找復古商品。</p>
+  </article>
+
+ </div>
+
+ <div class="note">
+  演唱會當天前往 INSPIRE Arena 需要較長交通時間，建議提早出發。中央高中是正常運作中的學校，參觀須遵守校方規定。
  </div>
 </section>
+
+<!-- DAY 3 -->
 
 <section class="day" id="d3">
- <div class="dayhead"><div><small>DAY 03 · MONDAY</small><h2>11/30（一）蠶室・樂天世界塔・市場・首爾站</h2></div><span class="tag">上午分流・10:30 集合</span></div>
- <div class="timeline">
-  <div class="time">08:00</div><div class="event"><strong>新村 Isaac Toast 早餐</strong></div>
+ <div class="dayhead">
+  <div>
+   <small>DAY 03 · MONDAY</small>
+   <h2>11/30（一）韓流巡禮・蠶室・樂天世界塔</h2>
+  </div>
+  <span class="tag">上午分流・10:30 集合</span>
  </div>
+
+ <div class="timeline">
+  <div class="time">08:00</div>
+  <div class="event">
+   <strong>新村 Isaac Toast 早餐</strong>
+   <span>在新村附近享用簡單早餐。</span>
+  </div>
+ </div>
+
  <div class="split">
-  <article class="route user"><h3>使用者路線｜淡藍色</h3><p><b>Egg Is Coming（에그이즈커밍）</b></p><p>前往 Hakdong 一帶進行公司外觀巡禮，拍照留念。</p></article>
-  <article class="route friend"><h3>朋友路線｜淡綠色</h3><p><b>石村湖（석촌호수）</b></p><p>沿湖散步，欣賞湖面與樂天世界塔景色。</p></article>
+
+  <article class="route user">
+   <h3>我的路線｜淡藍色</h3>
+
+   <div class="event">
+    <div class="time">上午</div>
+    <strong>Egg Is Coming（에그이즈커밍）</strong>
+    <p>前往 Hakdong 一帶進行公司外觀巡禮，拍照留念。</p>
+   </div>
+
+   <div class="event">
+    <div class="time">上午</div>
+    <strong>JYP Entertainment（JYP 娛樂）</strong>
+    <p>前往 JYP 娛樂公司大樓外觀巡禮，欣賞韓國 K-POP 經紀公司所在地。</p>
+   </div>
+
+   <p><b>巡禮提醒：</b>以大樓外觀拍照為主，不預設公司內部開放，請勿打擾工作人員及周邊居民。</p>
+  </article>
+
+  <article class="route friend">
+   <h3>小萊姆與介佑的路線｜淡綠色</h3>
+
+   <div class="event">
+    <div class="time">上午</div>
+    <strong>石村湖（석촌호수）</strong>
+    <p>沿湖散步，欣賞湖面與樂天世界塔景色。</p>
+   </div>
+
+   <p>可以依照天氣與體力安排湖畔散步、拍照及附近咖啡廳。</p>
+  </article>
+
  </div>
+
  <div class="timeline">
-  <div class="time">10:30</div><div class="event"><strong>樂天世界塔集合</strong></div>
-  <div class="time">中午</div><div class="event"><strong>本家雪濃湯（본가설렁탕）午餐</strong></div>
-  <div class="time">下午</div><div class="event"><strong>奧林匹克公園</strong></div>
-  <div class="time">下午／傍晚</div><div class="event"><strong>南大門市場或廣藏市場</strong><span>兩個市場當天再由三人討論選擇。</span></div>
-  <div class="time">晚間</div><div class="event"><strong>首爾站樂天商場／樂天超市</strong><span>作為當天最後一站，採買零食與伴手禮。</span></div>
+
+  <div class="time">10:30</div>
+  <div class="event">
+   <strong>樂天世界塔集合</strong>
+   <span>三人會合，開始蠶室地區共同行程。</span>
+  </div>
+
+  <div class="time">中午</div>
+  <div class="event">
+   <strong>本家雪濃湯（본가설렁탕）午餐</strong>
+   <span>享用韓式牛骨雪濃湯。</span>
+  </div>
+
+  <div class="time">下午</div>
+  <div class="event">
+   <strong>樂天世界塔（롯데월드타워）</strong>
+   <span>購物、韓流商品區及 Seoul Sky 展望台。</span>
+  </div>
+
+  <div class="time">下午</div>
+  <div class="event">
+   <strong>奧林匹克公園（올림픽공원）</strong>
+   <span>參觀世界和平之門、孤獨樹及公園步道。</span>
+  </div>
+
+  <div class="time">下午／傍晚</div>
+  <div class="event">
+   <strong>南大門市場或廣藏市場</strong>
+   <span>兩個市場當天再由三人討論選擇。</span>
+  </div>
+
+  <div class="time">晚間</div>
+  <div class="event">
+   <strong>首爾站樂天商場／樂天超市</strong>
+   <span>作為當天最後一站，採買零食與伴手禮。</span>
+  </div>
+
  </div>
+
  <div class="place-grid">
-  <article class="place"><h3>Egg Is Coming（에그이즈커밍）</h3><p class="facts">韓國知名綜藝製作公司，與多部人氣綜藝節目及製作人相關。</p><p><b>必看：</b>公司建築外觀與周邊環境。</p><p><b>可以做：</b>在不妨礙公司及居民的前提下拍照留念；不預設內部開放。</p></article>
-  <article class="place"><h3>石村湖（석촌호수）</h3><p class="facts">位於樂天世界塔旁，分為東湖與西湖，是首爾熱門散步地點。</p><p><b>必看：</b>湖面倒映樂天世界塔的景色。</p><p><b>必逛：</b>湖畔步道。</p></article>
-  <article class="place"><h3>樂天世界塔（롯데월드타워）</h3><p class="facts">2017 年開幕，高 555 公尺、共 123 層，是首爾代表性超高層建築。</p><p><b>必逛：</b>Lotte World Mall、韓流商品區、餐飲樓層。</p><p><b>必看：</b>Seoul Sky 首爾天空展望台，可俯瞰首爾市區。</p><details><summary>建築特色</summary><p>塔身線條靈感來自韓國傳統陶瓷與書法，展望台可欣賞高空城市景觀。</p></details></article>
-  <article class="place"><h3>本家雪濃湯（본가설렁탕）</h3><p class="facts">雪濃湯以牛骨長時間熬煮，湯色乳白。</p><p><b>必吃：</b>雪濃湯、牛肉湯飯類料理，通常搭配蔥花、白飯與泡菜。</p></article>
-  <article class="place"><h3>奧林匹克公園（올림픽공원）</h3><p class="facts">為 1988 年首爾奧運建設的綜合公園，也保留百濟時期歷史遺跡。</p><p><b>必看：</b>世界和平之門。</p><p><b>必拍：</b>孤獨樹（나홀로나무）。</p><p><b>必逛：</b>夢村土城一帶、草地與公園步道。</p></article>
-  <article class="place"><h3>南大門市場（남대문시장）</h3><p class="facts">首爾歷史悠久的大型傳統市場，鄰近崇禮門。</p><p><b>必逛：</b>服飾、生活用品、廚房用品、紀念品。</p><p><b>必吃：</b>刀削麵與各式傳統市場小吃。</p></article>
-  <article class="place"><h3>廣藏市場（광장시장）</h3><p class="facts">創立於 1905 年，以美食與布料商店聞名。</p><p><b>必吃：</b>綠豆煎餅、麻藥飯捲、生牛肉、辣炒年糕。</p><p><b>必逛：</b>傳統小吃區、布料與韓服材料商店。</p></article>
-  <article class="place"><h3>首爾站樂天商場／樂天超市</h3><p class="facts">首爾站附近方便集中採買的購物地點。</p><p><b>必買：</b>韓國零食、海苔、泡麵、餅乾、調味料。</p><p><b>必逛：</b>超市食品區與伴手禮區。</p></article>
+
+  <article class="place">
+   <h3>Egg Is Coming（에그이즈커밍）</h3>
+   <p class="facts">韓國知名綜藝製作公司，與多部人氣綜藝節目及製作人相關。</p>
+   <p><b>必看：</b>公司建築外觀與周邊環境。</p>
+   <p><b>可以做：</b>在不妨礙公司及居民的前提下拍照留念；不預設內部開放。</p>
+  </article>
+
+  <article class="place">
+   <h3>JYP Entertainment（JYP 娛樂）</h3>
+   <p class="facts">韓國大型娛樂經紀公司，旗下藝人包括 TWICE、Stray Kids、ITZY、NMIXX 等。</p>
+   <p><b>必看：</b>JYP 娛樂公司大樓外觀。</p>
+   <p><b>巡禮重點：</b>感受韓國 K-POP 娛樂產業的代表性地點。</p>
+   <p><b>參觀方式：</b>以外觀拍照為主，不預設內部開放。</p>
+  </article>
+
+  <article class="place">
+   <h3>石村湖（석촌호수）</h3>
+   <p class="facts">位於樂天世界塔旁，分為東湖與西湖，是首爾熱門散步地點。</p>
+   <p><b>必看：</b>湖面倒映樂天世界塔的景色。</p>
+   <p><b>必逛：</b>湖畔步道。</p>
+  </article>
+
+  <article class="place">
+   <h3>樂天世界塔（롯데월드타워）</h3>
+   <p class="facts">2017 年開幕，高 555 公尺、共 123 層，是首爾代表性超高層建築。</p>
+   <p><b>必逛：</b>Lotte World Mall、韓流商品區、餐飲樓層。</p>
+   <p><b>必看：</b>Seoul Sky 首爾天空展望台，可俯瞰首爾市區。</p>
+   <details>
+    <summary>建築特色</summary>
+    <p>塔身線條靈感來自韓國傳統陶瓷與書法，展望台可欣賞高空城市景觀。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>本家雪濃湯（본가설렁탕）</h3>
+   <p class="facts">雪濃湯以牛骨長時間熬煮，湯色乳白。</p>
+   <p><b>必吃：</b>雪濃湯、牛肉湯飯類料理，通常搭配蔥花、白飯與泡菜。</p>
+  </article>
+
+  <article class="place">
+   <h3>奧林匹克公園（올림픽공원）</h3>
+   <p class="facts">為 1988 年首爾奧運建設的綜合公園，也保留百濟時期歷史遺跡。</p>
+   <p><b>必看：</b>世界和平之門。</p>
+   <p><b>必拍：</b>孤獨樹（나홀로나무）。</p>
+   <p><b>必逛：</b>夢村土城一帶、草地與公園步道。</p>
+  </article>
+
+  <article class="place">
+   <h3>南大門市場（남대문시장）</h3>
+   <p class="facts">首爾歷史悠久的大型傳統市場，鄰近崇禮門。</p>
+   <p><b>必逛：</b>服飾、生活用品、廚房用品、紀念品。</p>
+   <p><b>必吃：</b>刀削麵與各式傳統市場小吃。</p>
+  </article>
+
+  <article class="place">
+   <h3>廣藏市場（광장시장）</h3>
+   <p class="facts">創立於 1905 年，以美食與布料商店聞名。</p>
+   <p><b>必吃：</b>綠豆煎餅、麻藥飯捲、生牛肉、辣炒年糕。</p>
+   <p><b>必逛：</b>傳統小吃區、布料與韓服材料商店。</p>
+  </article>
+
+  <article class="place">
+   <h3>首爾站樂天商場／樂天超市</h3>
+   <p class="facts">首爾站附近方便集中採買的購物地點。</p>
+   <p><b>必買：</b>韓國零食、海苔、泡麵、餅乾、調味料。</p>
+   <p><b>必逛：</b>超市食品區與伴手禮區。</p>
+  </article>
+
  </div>
 </section>
+
+<!-- DAY 4 -->
 
 <section class="day" id="d4">
- <div class="dayhead"><div><small>DAY 04 · TUESDAY</small><h2>12/01（二）DMZ・德壽宮・清溪川・鐘路三街</h2></div><span class="tag">近代歷史巡禮</span></div>
- <div class="timeline">
-  <div class="time">早餐</div><div class="event"><strong>弘大元祖肉煎饡早餐</strong></div>
-  <div class="time">約 08:00</div><div class="event"><strong>DMZ 半日遊出發</strong></div>
-  <div class="time">約 15:00</div><div class="event"><strong>返回市廳／德壽宮一帶</strong></div>
-  <div class="time">下午</div><div class="event"><strong>德壽宮、德壽宮石牆路</strong></div>
-  <div class="time">17:00</div><div class="event"><strong>德壽亭晚餐</strong></div>
-  <div class="time">晚間</div><div class="event"><strong>清溪川廣場、鐘路三街布帳馬車</strong></div>
+ <div class="dayhead">
+  <div>
+   <small>DAY 04 · TUESDAY</small>
+   <h2>12/01（二）DMZ・德壽宮・清溪川・鐘路三街</h2>
+  </div>
+  <span class="tag">近代歷史巡禮</span>
  </div>
+
+ <div class="timeline">
+
+  <div class="time">早餐</div>
+  <div class="event">
+   <strong>弘大元祖肉煎饡早餐</strong>
+   <span>享用韓式早餐，準備出發。</span>
+  </div>
+
+  <div class="time">約 08:00</div>
+  <div class="event">
+   <strong>DMZ 半日遊出發</strong>
+   <span>依照旅行團集合時間出發。</span>
+  </div>
+
+  <div class="time">約 15:00</div>
+  <div class="event">
+   <strong>返回市廳／德壽宮一帶</strong>
+   <span>DMZ 行程結束後返回首爾市中心。</span>
+  </div>
+
+  <div class="time">下午</div>
+  <div class="event">
+   <strong>德壽宮、德壽宮石牆路</strong>
+   <span>欣賞傳統宮殿與近代西式建築。</span>
+  </div>
+
+  <div class="time">17:00</div>
+  <div class="event">
+   <strong>德壽亭晚餐</strong>
+   <span>享用韓式料理及熱食。</span>
+  </div>
+
+  <div class="time">晚間</div>
+  <div class="event">
+   <strong>清溪川廣場、鐘路三街布帳馬車</strong>
+   <span>欣賞夜景並體驗韓國夜間飲食文化。</span>
+  </div>
+
+ </div>
+
  <div class="place-grid">
-  <article class="place"><h3>DMZ 非軍事區</h3><p class="facts">1953 年韓戰停戰協定後，南北韓之間設立非軍事區，成為南北分裂的象徵。</p><p><b>依團體路線可能參觀：</b>都羅展望台、第三地道、臨津閣和平公園。</p><details><summary>歷史故事</summary><p>韓戰結束的是大規模軍事衝突，並非正式和平條約。DMZ 讓旅客從邊境地形與展覽認識韓戰及南北韓關係。</p></details></article>
-  <article class="place"><h3>德壽宮（덕수궁）</h3><p class="facts">原為王室住宅，1593 年壬辰倭亂後成為王室臨時居所，後來成為宮殿，1907 年改名德壽宮。</p><p><b>必看：</b>大漢門、即祚堂、中和殿、石造殿。</p><p><b>特色：</b>韓式宮殿與西式石造建築並存。</p><details><summary>歷史故事</summary><p>德壽宮見證朝鮮王朝末期及大韓帝國時期的歷史轉折。中和殿是重要的正殿，石造殿則呈現西式建築風格。</p></details></article>
-  <article class="place"><h3>德壽宮石牆路（덕수궁 돌담길）</h3><p class="facts">沿著德壽宮外圍延伸的知名散步路線。</p><p><b>必看：</b>傳統石牆、樹木與周邊歐式建築。</p><p><b>必拍：</b>沿宮牆延伸的街道景色，秋冬氣氛尤其濃厚。</p></article>
-  <article class="place"><h3>清溪川廣場（청계광장）</h3><p class="facts">清溪川曾被覆蓋為道路，經都市改造後於 2005 年重新開放。</p><p><b>必看：</b>清溪川起點的噴泉、瀑布與地標裝置。</p><p><b>必逛：</b>沿河道散步、欣賞市中心夜景。</p></article>
-  <article class="place"><h3>鐘路三街布帳馬車（종로3가 포장마차）</h3><p class="facts">韓國常見的路邊帳篷式小吃攤，鐘路三街一帶以夜間布帳馬車聚集聞名。</p><p><b>必體驗：</b>坐在帳篷裡吃熱食，感受韓國夜生活。</p><p><b>常見料理：</b>魚板湯、辣炒年糕、煎餅、烤串。</p></article>
+
+  <article class="place">
+   <h3>DMZ 非軍事區</h3>
+   <p class="facts">1953 年韓戰停戰協定後，南北韓之間設立非軍事區，成為南北分裂的象徵。</p>
+   <p><b>依團體路線可能參觀：</b>都羅展望台、第三地道、臨津閣和平公園。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>韓戰結束的是大規模軍事衝突，並非正式和平條約。DMZ 讓旅客從邊境地形與展覽認識韓戰及南北韓關係。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>德壽宮（덕수궁）</h3>
+   <p class="facts">原為王室住宅，1593 年壬辰倭亂後成為王室臨時居所，後來成為宮殿，1907 年改名德壽宮。</p>
+   <p><b>必看：</b>大漢門、即祚堂、中和殿、石造殿。</p>
+   <p><b>特色：</b>韓式宮殿與西式石造建築並存。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>德壽宮見證朝鮮王朝末期及大韓帝國時期的歷史轉折。中和殿是重要的正殿，石造殿則呈現西式建築風格。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>德壽宮石牆路（덕수궁 돌담길）</h3>
+   <p class="facts">沿著德壽宮外圍延伸的知名散步路線。</p>
+   <p><b>必看：</b>傳統石牆、樹木與周邊歐式建築。</p>
+   <p><b>必拍：</b>沿宮牆延伸的街道景色，秋冬氣氛尤其濃厚。</p>
+  </article>
+
+  <article class="place">
+   <h3>清溪川廣場（청계광장）</h3>
+   <p class="facts">清溪川曾被覆蓋為道路，經都市改造後於 2005 年重新開放。</p>
+   <p><b>必看：</b>清溪川起點的噴泉、瀑布與地標裝置。</p>
+   <p><b>必逛：</b>沿河道散步、欣賞市中心夜景。</p>
+  </article>
+
+  <article class="place">
+   <h3>鐘路三街布帳馬車（종로3가 포장마차）</h3>
+   <p class="facts">韓國常見的路邊帳篷式小吃攤，鐘路三街一帶以夜間布帳馬車聚集聞名。</p>
+   <p><b>必體驗：</b>坐在帳篷裡吃熱食，感受韓國夜生活。</p>
+   <p><b>常見料理：</b>魚板湯、辣炒年糕、煎餅、烤串。</p>
+  </article>
+
  </div>
 </section>
+
+<!-- DAY 5 -->
 
 <section class="day" id="d5">
- <div class="dayhead"><div><small>DAY 05 · WEDNESDAY</small><h2>12/02（三）梨花女大・光化門・景福宮・明洞・南山塔</h2></div><span class="tag">宮殿與首爾地標</span></div>
- <div class="timeline">
-  <div class="time">早上</div><div class="event"><strong>Paik's Coffee 新村早餐</strong></div>
-  <div class="time">上午</div><div class="event"><strong>梨花女子大學、光化門廣場</strong></div>
-  <div class="time">中午</div><div class="event"><strong>景福宮</strong></div>
-  <div class="time">午餐</div><div class="event"><strong>土俗村蔘雞湯</strong></div>
-  <div class="time">下午</div><div class="event"><strong>東大門設計廣場 DDP</strong></div>
-  <div class="time">傍晚</div><div class="event"><strong>明洞商圈、香港飯店0410 晚餐</strong></div>
-  <div class="time">晚間</div><div class="event"><strong>南山首爾塔</strong></div>
-  <div class="time">宵夜</div><div class="event"><strong>Green Pub 炸雞</strong></div>
+ <div class="dayhead">
+  <div>
+   <small>DAY 05 · WEDNESDAY</small>
+   <h2>12/02（三）梨花女大・光化門・景福宮・明洞・南山塔</h2>
+  </div>
+  <span class="tag">宮殿與首爾地標</span>
  </div>
+
+ <div class="timeline">
+
+  <div class="time">早上</div>
+  <div class="event">
+   <strong>Paik's Coffee 新村早餐</strong>
+   <span>在新村附近享用簡單早餐及咖啡。</span>
+  </div>
+
+  <div class="time">上午</div>
+  <div class="event">
+   <strong>梨花女子大學、光化門廣場</strong>
+   <span>欣賞校園建築及首爾市中心重要廣場。</span>
+  </div>
+
+  <div class="time">中午</div>
+  <div class="event">
+   <strong>景福宮</strong>
+   <span>參觀朝鮮王朝第一座主要王宮。</span>
+  </div>
+
+  <div class="time">午餐</div>
+  <div class="event">
+   <strong>土俗村蔘雞湯</strong>
+   <span>品嚐韓國傳統蔘雞湯。</span>
+  </div>
+
+  <div class="time">下午</div>
+  <div class="event">
+   <strong>東大門設計廣場 DDP</strong>
+   <span>欣賞現代建築與設計展覽空間。</span>
+  </div>
+
+  <div class="time">傍晚</div>
+  <div class="event">
+   <strong>明洞商圈、香港飯店0410 晚餐</strong>
+   <span>購物、逛街並享用韓式中華料理。</span>
+  </div>
+
+  <div class="time">晚間</div>
+  <div class="event">
+   <strong>南山首爾塔</strong>
+   <span>欣賞首爾市區夜景。</span>
+  </div>
+
+  <div class="time">宵夜</div>
+  <div class="event">
+   <strong>Green Pub 炸雞</strong>
+   <span>享用炸雞及夜間小吃。</span>
+  </div>
+
+ </div>
+
  <div class="place-grid">
-  <article class="place"><h3>梨花女子大學（이화여자대학교）</h3><p class="facts">歷史可追溯至 1886 年，由美國傳教士 Mary F. Scranton 創辦。</p><p><b>必看：</b>ECC 校園複合園區、校園歐式建築與綠地。</p><p><b>特色：</b>韓國歷史悠久的女子高等教育機構，校園建築融合傳統與現代設計。</p></article>
-  <article class="place"><h3>光化門廣場（광화문광장）</h3><p class="facts">位於景福宮正門前，是首爾重要的歷史與政治象徵空間。</p><p><b>必看：</b>世宗大王、李舜臣將軍銅像。</p><details><summary>歷史故事</summary><p>世宗大王是朝鮮第四代國王，推動創制訓民正音；李舜臣是壬辰倭亂期間抵抗日本入侵的名將。</p></details></article>
-  <article class="place"><h3>景福宮（경복궁）</h3><p class="facts">建於 1395 年，是朝鮮王朝建立後興建的第一座主要王宮，也是五大宮殿中規模最大的一座。「景福」寓意新王朝福運綿長。</p><p><b>必看：</b>光化門、興禮門、勤政殿、慶會樓、香遠亭。</p><p><b>必體驗：</b>守門將換崗儀式、穿韓服拍照、參觀宮殿建築。</p><details><summary>歷史故事與建築看點</summary><p>景福宮在 1592 年壬辰倭亂時遭破壞，直到 1867 年高宗時期才大規模重建。日本殖民統治時期又遭大量拆除，近代持續進行復原。勤政殿是國王舉行重要儀式、接見臣下的正殿；慶會樓則是王室宴會場所，周圍有池塘。</p></details></article>
-  <article class="place"><h3>土俗村蔘雞湯（토속촌삼계탕）</h3><p class="facts">景福宮附近知名的蔘雞湯餐廳。</p><p><b>必吃：</b>傳統蔘雞湯，以整隻雞燉煮人蔘、糯米、紅棗等食材。</p></article>
-  <article class="place"><h3>東大門設計廣場 DDP（동대문디자인플라자）</h3><p class="facts">2014 年開幕，由建築師 Zaha Hadid 設計，以流線型、少直角的未來感外觀聞名。</p><p><b>必看：</b>銀色流線建築外觀。</p><p><b>必逛：</b>展覽空間、設計商店、周邊廣場。</p><p><b>必拍：</b>夜間點燈後的建築外觀。</p></article>
-  <article class="place"><h3>明洞（명동）</h3><p class="facts">首爾代表性觀光購物區，聚集美妝、服飾、百貨與街頭小吃。</p><p><b>必逛：</b>Olive Young、韓妝店、服飾店、紀念品店。</p><p><b>必吃：</b>糖餅、烤起司、韓式炸物等街頭小吃。</p></article>
-  <article class="place"><h3>南山首爾塔（N서울타워）</h3><p class="facts">位於南山山頂，塔高約 236.7 公尺，是首爾知名地標與觀景地點。</p><p><b>必看：</b>愛情鎖牆、愛心椅、首爾市區夜景。</p><p><b>必體驗：</b>搭乘南山纜車或接駁巴士上山；可購買愛情鎖，寫上名字或願望後掛上。</p><details><summary>愛情鎖的由來與看點</summary><p>許多情侶會把寫有名字或心願的鎖掛在欄杆上，象徵感情長久。即使不是情侶，也可以把它當成旅程紀念，留下自己的願望。</p></details></article>
+
+  <article class="place">
+   <h3>梨花女子大學（이화여자대학교）</h3>
+   <p class="facts">歷史可追溯至 1886 年，由美國傳教士 Mary F. Scranton 創辦。</p>
+   <p><b>必看：</b>ECC 校園複合園區、校園歐式建築與綠地。</p>
+   <p><b>特色：</b>韓國歷史悠久的女子高等教育機構，校園建築融合傳統與現代設計。</p>
+  </article>
+
+  <article class="place">
+   <h3>光化門廣場（광화문광장）</h3>
+   <p class="facts">位於景福宮正門前，是首爾重要的歷史與政治象徵空間。</p>
+   <p><b>必看：</b>世宗大王、李舜臣將軍銅像。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>世宗大王是朝鮮第四代國王，推動創制訓民正音；李舜臣是壬辰倭亂期間抵抗日本入侵的名將。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>景福宮（경복궁）</h3>
+   <p class="facts">建於 1395 年，是朝鮮王朝建立後興建的第一座主要王宮，也是五大宮殿中規模最大的一座。「景福」寓意新王朝福運綿長。</p>
+   <p><b>必看：</b>光化門、興禮門、勤政殿、慶會樓、香遠亭。</p>
+   <p><b>必體驗：</b>守門將換崗儀式、穿韓服拍照、參觀宮殿建築。</p>
+   <details>
+    <summary>歷史故事與建築看點</summary>
+    <p>景福宮在 1592 年壬辰倭亂時遭破壞，直到 1867 年高宗時期才大規模重建。日本殖民統治時期又遭大量拆除，近代持續進行復原。勤政殿是國王舉行重要儀式、接見臣下的正殿；慶會樓則是王室宴會場所，周圍有池塘。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>土俗村蔘雞湯（토속촌삼계탕）</h3>
+   <p class="facts">景福宮附近知名的蔘雞湯餐廳。</p>
+   <p><b>必吃：</b>傳統蔘雞湯，以整隻雞燉煮人蔘、糯米、紅棗等食材。</p>
+  </article>
+
+  <article class="place">
+   <h3>東大門設計廣場 DDP（동대문디자인플라자）</h3>
+   <p class="facts">2014 年開幕，由建築師 Zaha Hadid 設計，以流線型、少直角的未來感外觀聞名。</p>
+   <p><b>必看：</b>銀色流線建築外觀。</p>
+   <p><b>必逛：</b>展覽空間、設計商店、周邊廣場。</p>
+   <p><b>必拍：</b>夜間點燈後的建築外觀。</p>
+  </article>
+
+  <article class="place">
+   <h3>明洞（명동）</h3>
+   <p class="facts">首爾代表性觀光購物區，聚集美妝、服飾、百貨與街頭小吃。</p>
+   <p><b>必逛：</b>Olive Young、韓妝店、服飾店、紀念品店。</p>
+   <p><b>必吃：</b>糖餅、烤起司、韓式炸物等街頭小吃。</p>
+  </article>
+
+  <article class="place">
+   <h3>南山首爾塔（N서울타워）</h3>
+   <p class="facts">位於南山山頂，塔高約 236.7 公尺，是首爾知名地標與觀景地點。</p>
+   <p><b>必看：</b>愛情鎖牆、愛心椅、首爾市區夜景。</p>
+   <p><b>必體驗：</b>搭乘南山纜車或接駁巴士上山；可購買愛情鎖，寫上名字或願望後掛上。</p>
+   <details>
+    <summary>愛情鎖的由來與看點</summary>
+    <p>許多情侶會把寫有名字或心願的鎖掛在欄杆上，象徵感情長久。也可以把它當成旅程紀念，留下自己的願望。</p>
+   </details>
+  </article>
+
  </div>
 </section>
+
+<!-- DAY 6 -->
 
 <section class="day" id="d6">
- <div class="dayhead"><div><small>DAY 06 · THURSDAY</small><h2>12/03（四）恩平韓屋村・獨立門・西大門・弘大</h2></div><span class="tag">韓屋與獨立運動歷史</span></div>
- <div class="timeline">
-  <div class="time">早上</div><div class="event"><strong>新村自助餐早餐</strong></div>
-  <div class="time">上午</div><div class="event"><strong>恩平韓屋村、1인1잔 咖啡廳</strong></div>
-  <div class="time">中午</div><div class="event"><strong>옥이네김밥</strong></div>
-  <div class="time">下午</div><div class="event"><strong>獨立門、西大門刑務所歷史館、大韓民國臨時政府紀念館</strong></div>
-  <div class="time">晚餐</div><div class="event"><strong>豬肉商會烤肉吃到飽</strong></div>
-  <div class="time">晚間</div><div class="event"><strong>弘大商圈</strong></div>
+ <div class="dayhead">
+  <div>
+   <small>DAY 06 · THURSDAY</small>
+   <h2>12/03（四）恩平韓屋村・獨立門・西大門・弘大</h2>
+  </div>
+  <span class="tag">韓屋與獨立運動歷史</span>
  </div>
+
+ <div class="timeline">
+
+  <div class="time">早上</div>
+  <div class="event">
+   <strong>新村自助餐早餐</strong>
+   <span>在新村附近享用早餐。</span>
+  </div>
+
+  <div class="time">上午</div>
+  <div class="event">
+   <strong>恩平韓屋村、1인1잔 咖啡廳</strong>
+   <span>欣賞韓屋與北漢山山景。</span>
+  </div>
+
+  <div class="time">中午</div>
+  <div class="event">
+   <strong>옥이네김밥</strong>
+   <span>安排韓式飯捲及簡餐。</span>
+  </div>
+
+  <div class="time">下午</div>
+  <div class="event">
+   <strong>獨立門、西大門刑務所歷史館、大韓民國臨時政府紀念館</strong>
+   <span>了解韓國近代歷史與獨立運動。</span>
+  </div>
+
+  <div class="time">晚餐</div>
+  <div class="event">
+   <strong>豬肉商會烤肉吃到飽</strong>
+   <span>享用韓式烤肉吃到飽。</span>
+  </div>
+
+  <div class="time">晚間</div>
+  <div class="event">
+   <strong>弘大商圈</strong>
+   <span>最後採買、逛街或自由活動。</span>
+  </div>
+
+ </div>
+
  <div class="place-grid">
-  <article class="place"><h3>恩平韓屋村（은평한옥마을）</h3><p class="facts">位於北漢山山腳下，相較北村，這裡的韓屋聚落較新，周邊自然景觀突出。</p><p><b>必看：</b>韓屋屋頂與北漢山山景。</p><p><b>必拍：</b>韓屋與山景同框；若遇下雪，景色尤其有特色。</p></article>
-  <article class="place"><h3>1인1잔 咖啡廳</h3><p class="facts">位於恩平韓屋村一帶，以可欣賞韓屋村景觀的樓層與窗景聞名。</p><p><b>必體驗：</b>找靠窗位置喝咖啡、欣賞韓屋屋頂與北漢山。</p></article>
-  <article class="place"><h3>獨立門（독립문）</h3><p class="facts">建於 1897 年，象徵朝鮮追求自主獨立的意識。</p><p><b>必看：</b>仿西方凱旋門形式建造的石造門樓。</p><details><summary>歷史故事</summary><p>獨立門與當時的獨立協會及啟蒙運動有關，反映朝鮮近代面對列強時追求自主的歷史背景。</p></details></article>
-  <article class="place"><h3>西大門刑務所歷史館（서대문형무소역사관）</h3><p class="facts">前身於 1908 年以京城監獄之名設立，是日本殖民統治時期關押韓國獨立運動人士的重要監獄。</p><p><b>必看：</b>監獄舍房、刑訊相關展區、地下牢房、死刑執行場。</p><details><summary>歷史故事</summary><p>三一運動後，許多獨立運動人士被關押於此，柳寬順也曾在此遭受囚禁與酷刑。歷史館於 1998 年開館，將原監獄建築修復為歷史教育場域。</p></details></article>
-  <article class="place"><h3>大韓民國臨時政府紀念館</h3><p class="facts">介紹 1919 年上海大韓民國臨時政府成立後，韓國獨立運動者在海外持續推動獨立運動的歷史。</p><p><b>必看：</b>臨時政府成立背景、重要人物與海外獨立運動展覽。</p><details><summary>歷史故事</summary><p>1919 年三一運動後，韓國獨立人士在上海成立大韓民國臨時政府，持續進行外交、軍事與政治活動。</p></details></article>
-  <article class="place"><h3>弘大商圈（홍대）</h3><p class="facts">首爾年輕文化、流行時尚與夜生活的代表區域。</p><p><b>必逛：</b>服飾店、唱片與周邊商品店、特色小店。</p><p><b>必看：</b>街頭表演與夜間街景。</p></article>
+
+  <article class="place">
+   <h3>恩平韓屋村（은평한옥마을）</h3>
+   <p class="facts">位於北漢山山腳下，相較北村，這裡的韓屋聚落較新，周邊自然景觀突出。</p>
+   <p><b>必看：</b>韓屋屋頂與北漢山山景。</p>
+   <p><b>必拍：</b>韓屋與山景同框；若遇下雪，景色尤其有特色。</p>
+  </article>
+
+  <article class="place">
+   <h3>1인1잔 咖啡廳</h3>
+   <p class="facts">位於恩平韓屋村一帶，以可欣賞韓屋村景觀的樓層與窗景聞名。</p>
+   <p><b>必體驗：</b>找靠窗位置喝咖啡、欣賞韓屋屋頂與北漢山。</p>
+  </article>
+
+  <article class="place">
+   <h3>獨立門（독립문）</h3>
+   <p class="facts">建於 1897 年，象徵朝鮮追求自主獨立的意識。</p>
+   <p><b>必看：</b>仿西方凱旋門形式建造的石造門樓。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>獨立門與當時的獨立協會及啟蒙運動有關，反映朝鮮近代面對列強時追求自主的歷史背景。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>西大門刑務所歷史館（서대문형무소역사관）</h3>
+   <p class="facts">前身於 1908 年以京城監獄之名設立，是日本殖民統治時期關押韓國獨立運動人士的重要監獄。</p>
+   <p><b>必看：</b>監獄舍房、刑訊相關展區、地下牢房、死刑執行場。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>三一運動後，許多獨立運動人士被關押於此，柳寬順也曾在此遭受囚禁與酷刑。歷史館於 1998 年開館，將原監獄建築修復為歷史教育場域。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>大韓民國臨時政府紀念館</h3>
+   <p class="facts">介紹 1919 年上海大韓民國臨時政府成立後，韓國獨立運動者在海外持續推動獨立運動的歷史。</p>
+   <p><b>必看：</b>臨時政府成立背景、重要人物與海外獨立運動展覽。</p>
+   <details>
+    <summary>歷史故事</summary>
+    <p>1919 年三一運動後，韓國獨立人士在上海成立大韓民國臨時政府，持續進行外交、軍事與政治活動。</p>
+   </details>
+  </article>
+
+  <article class="place">
+   <h3>弘大商圈（홍대）</h3>
+   <p class="facts">首爾年輕文化、流行時尚與夜生活的代表區域。</p>
+   <p><b>必逛：</b>服飾店、唱片與周邊商品店、特色小店。</p>
+   <p><b>必看：</b>街頭表演與夜間街景。</p>
+  </article>
+
  </div>
 </section>
 
+<!-- DAY 7 -->
+
 <section class="day" id="d7">
- <div class="dayhead"><div><small>DAY 07 · FRIDAY</small><h2>12/04（五）返台</h2></div><span class="tag">回程日</span></div>
+ <div class="dayhead">
+  <div>
+   <small>DAY 07 · FRIDAY</small>
+   <h2>12/04（五）返台</h2>
+  </div>
+  <span class="tag">回程日</span>
+ </div>
+
  <div class="timeline">
-  <div class="time">早上</div><div class="event"><strong>新村附近便利商店或簡單早餐</strong></div>
-  <div class="time">約 07:30</div><div class="event"><strong>從民宿出發前往仁川國際機場</strong></div>
-  <div class="time">09:30</div><div class="event"><strong>抵達仁川機場，辦理報到與托運</strong></div>
-  <div class="time">12:30</div><div class="event"><strong>搭乘華航 CI161 返回台灣</strong></div>
+
+  <div class="time">早上</div>
+  <div class="event">
+   <strong>新村附近便利商店或簡單早餐</strong>
+   <span>整理行李、確認護照、機票及伴手禮。</span>
+  </div>
+
+  <div class="time">約 07:30</div>
+  <div class="event">
+   <strong>從民宿出發前往仁川國際機場</strong>
+   <span>預留交通、轉乘及機場報到時間。</span>
+  </div>
+
+  <div class="time">09:30</div>
+  <div class="event">
+   <strong>抵達仁川機場，辦理報到與托運</strong>
+   <span>預計於起飛前三小時抵達機場。</span>
+  </div>
+
+  <div class="time">12:30</div>
+  <div class="event">
+   <strong>搭乘華航 CI161 返回台灣</strong>
+   <span>結束首爾七天六夜旅行。</span>
+  </div>
+
  </div>
 </section>
-<div class="note">行程中的時間為規劃版本。景點是否開放、最後入場時間、DMZ 團路線、交通班次及餐廳營業時間，請以出發前與當日官方公告為準。部分學校、公司及住宅區不保證開放入內參觀。</div>
-<footer class="footer">SEOUL WINTER TRIP · 2026.11.28—12.04<br>把歷史、城市風景、美食與演唱會，收進七天六夜。</footer>
+
+<!-- TRAVEL NOTES -->
+
+<section class="day">
+ <div class="dayhead">
+  <div>
+   <small>TRAVEL NOTES</small>
+   <h2>旅行備忘錄</h2>
+  </div>
+  <span class="tag">出發前確認</span>
+ </div>
+
+ <div class="place-grid">
+
+  <article class="place">
+   <h3>航班資訊</h3>
+   <p><b>去程：</b>中華航空 CI162，11/28 預計 19:15 抵達仁川。</p>
+   <p><b>回程：</b>中華航空 CI161，12/04 12:30 自仁川起飛。</p>
+   <p><b>機場時間：</b>回程預計 09:30 抵達仁川機場。</p>
+  </article>
+
+  <article class="place">
+   <h3>交通與票卡</h3>
+   <p>抵達後可搭乘 AREX 前往弘大入口站。</p>
+   <p>確認氣候同行卡購買地點及七日票使用方式。</p>
+   <p>提前準備交通卡與少量韓元現金。</p>
+   <p>演唱會當天往返 INSPIRE Arena，務必預留交通時間。</p>
+  </article>
+
+  <article class="place">
+   <h3>冬季穿著提醒</h3>
+   <p>洋蔥式穿搭：發熱衣、毛衣、羽絨外套或厚外套。</p>
+   <p>準備手套、圍巾、毛帽及厚襪子。</p>
+   <p>穿著保暖鞋款，遇到降雪或結冰時注意防滑。</p>
+   <p>暖暖包可以準備手握式及貼式兩種。</p>
+  </article>
+
+  <article class="place">
+   <h3>重要提醒</h3>
+   <p>景點是否開放、最後入場時間、DMZ 團路線、交通班次及餐廳營業時間，請以出發前與當日官方公告為準。</p>
+   <p>部分學校、公司及住宅區不保證開放入內參觀。</p>
+  </article>
+
+ </div>
+</section>
+
+<div class="note">
+ 行程中的時間為規劃版本。景點是否開放、最後入場時間、DMZ 團路線、交通班次及餐廳營業時間，請以出發前與當日官方公告為準。部分學校、公司及住宅區不保證開放入內參觀。
+</div>
+
+<footer class="footer">
+ SEOUL WINTER TRIP · 2026.11.28—12.04<br>
+ 把歷史、城市風景、美食與演唱會，收進七天六夜。
+</footer>
+
 </main>
 </body>
 </html>
